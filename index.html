@@ -1,62 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Game Reward</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Claim Your Reward</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body, html {
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
       background-color: #000;
-      height: 100%;
     }
 
     .container {
-      height: 100vh;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      background-color: #fff;
-      padding: 15px 10px;
-      text-align: center;
     }
 
     .page-title {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: bold;
       color: #000;
-      margin-top: 10px;
+      margin: 20px 10px 10px;
+      line-height: 1.6;
     }
 
     .main-image {
-      max-height: 35vh;
-      width: auto;
       max-width: 100%;
+      max-height: 45vh;
+      height: auto;
+      margin: 20px 0;
     }
 
     .locker-box {
-      background-color: #111;
+      background-color: rgba(0, 0, 0, 0.6); /* شفاف */
       color: white;
-      padding: 10px 15px;
+      padding: 20px 15px;
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+      border-radius: 0;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.4);
     }
 
     .locker-box p {
       font-size: 1rem;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .cta-button {
-      padding: 12px 20px;
+      padding: 12px 25px;
       background: linear-gradient(45deg, #d94e6c, #ff7e5f);
       color: white;
       font-weight: bold;
@@ -69,21 +65,36 @@
     .cta-button:active {
       transform: scale(0.95);
     }
+
+    @media (max-width: 480px) {
+      .page-title {
+        font-size: 1rem;
+      }
+
+      .locker-box p {
+        font-size: 0.95rem;
+      }
+
+      .cta-button {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <h1 class="page-title">
-      🎁 Win exciting rewards!<br>Start by clicking below
+      🎁 Get exclusive rewards!<br>
+      Just follow the quick step below.
     </h1>
 
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZtp77Xap3d4HQR2yZDcQJdZuL-OOyGxsHivWrXy9t37lOdx30uwbwyYhmXm32zhW7k1BJr6LvSAjE-0wvW7DicZDSECWuJpGSK-UzGbTTGCXOlsNHb3Em8wWMGfklutbZcZaysYX9Vs0eh4hmJrWa6uJxHX1nQvn8TMmQB7jDXXs0cUnsan257RmRNbNY/s1408/image_fx%284%29.jpg" alt="Reward" class="main-image">
 
     <div class="locker-box">
-      <p>Click the button below to get started!</p>
+      <p>Click the button below to unlock your surprise!</p>
       <a href="https://www.akamaicdn.org/unlock/FZp2T" target="_blank">
-        <button class="cta-button">Start Now</button>
+        <button class="cta-button">Claim Now</button>
       </a>
     </div>
   </div>
