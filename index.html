@@ -42,6 +42,7 @@
             text-decoration: none;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .download-btn:hover {
@@ -74,19 +75,29 @@
             }
         }
     </style>
+    <script>
+        function openLocker() {
+            const url = "https://locked-content.com/?aad9ce9";
+            const width = 600;
+            const height = 800;
+            const left = (screen.width - width) / 2;
+            const top = (screen.height - height) / 2;
+            window.open(url, 'ContentLocker', `width=${width},height=${height},top=${top},left=${left}`);
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to My App</h1>
         <p>Download now and enjoy exclusive features!</p>
-        <a href="https://locked-content.com/?aad9ce9" target="_blank" class="download-btn">
+        <button onclick="openLocker()" class="download-btn">
             <img src="https://img.icons8.com/?size=100&id=99375&format=png&color=000000" alt="Android">
             Download for Android
-        </a>
-        <a href="https://locked-content.com/?aad9ce9" target="_blank" class="download-btn">
+        </button>
+        <button onclick="openLocker()" class="download-btn">
             <img src="https://img.icons8.com/?size=100&id=30840&format=png&color=000000" alt="iOS">
             Download for iOS
-        </a>
+        </button>
         <img src="https://via.placeholder.com/600x400.png?text=App+Screenshot" alt="App Screenshot" class="app-screenshot">
     </div>
 </body>
